@@ -1,0 +1,216 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+}
+.container {
+}
+.container_header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.header__logo {
+  flex: 2;
+}
+.header__logo:last-child {
+  margin-right: 15px;
+}
+.header__menu {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+}
+.header__list {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__list:last-child {
+  margin-right: 0px;
+}
+.header__link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.header__link:hover,
+.header__link:active,
+.header__link:focus {
+  color: rgba(24, 49, 129, 1);
+}
+.header__btn-link {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: rgba(24, 49, 129, 1);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.header__btn-link:hover,
+.header__btn-link:active,
+.header__btn-link :focus {
+  background-color: rgb(59, 154, 218);
+}
+/*HIRO*/
+.hiro {
+  width: 100%;
+  height: 100vh;
+  max-height: 860px;
+  background: url(../img/bg.jpg) no-repeat right top,
+    linear-gradient(rgba(217, 232, 239, 1), rgba(234, 242, 245, 1));
+  background-size: 30% cover;
+}
+.wrapper {
+  max-width: 1110px;
+  height: 100%;
+  margin: 0 auto;
+}
+.hiro__content {
+  height: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hiro__title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  margin-bottom: 15px;
+}
+.hiro__mini-title {
+  font-size: 18px;
+  line-height: 32px;
+}
+/*Statistics*/
+.statistics__list {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.statistics__item {
+  display: flex;
+  max-width: 255px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.statistics__namber {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+.statistics__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/*cutaway*/
+
+.title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.cutaway__main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: center;
+}
+.cutaway__logo {
+  flex: 1;
+  position: relative;
+}
+.cutaway__img {
+  z-index: 2;
+  position: relative;
+  width: 70%;
+  margin-left: 30px;
+}
+.cutaway__link {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #183181;
+  position: relative;
+  background: url(../img/svg/Vector.svg) no-repeat center;
+  padding-right: 155px;
+  transition: 0.4s;
+}
+
+.cutaway__link:hover {
+  padding-right: 170px;
+}
+.circle {
+  width: 420px;
+  height: 420px;
+  background: rgba(234, 236, 247, 0.9);
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: -16px;
+  z-index: 1;
+}
+.cutaway__info {
+  flex: 1;
+}
+.cutaway__title {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #183181;
+}
+.cutaway__text {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.cards {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "cards__vertically   cards__long      cards__long"
+    "cards__vertically   cards__center    cards__vertically-bottom"
+    "cards__big          cards__big       cards__vertically-bottom"
+    "cards__big          cards__big       cards__bottom-right";
+  gap: 30px;
+}
+.cards__vertically {
+  grid-area: cards__vertically;
+}
+.cards__long {
+  grid-area: cards__long;
+}
+.cards__center {
+  grid-area: cards__center;
+}
+.cards__vertically-bottom {
+  grid-area: cards__vertically-bottom;
+}
+.cards__big {
+  grid-area: cards__big;
+}
+.cards__bottom-right {
+  grid-area: cards__bottom-right;
+}
