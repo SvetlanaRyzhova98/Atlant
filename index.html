@@ -45,7 +45,7 @@
             </nav>
         </div>
     </header>
-    <section class="hiro">
+    <section class="hiro hiro__background-2">
         <div class="wrapper">
             <div class="hiro__content">
                 <h1 class="hiro__title">
@@ -54,6 +54,7 @@
                 <h5 class="hiro__mini-title">
                     11 лет опыта  индустриального строительства
                 </h5>
+                <a href="#!" class="hiro__background-link"> <span class="icon__hiro icon-chevron-circle-right"></span></a>
             </div>
         </div>
     </section>
@@ -111,23 +112,45 @@
             </h2>
             <div class="cards">
                 <figure class="cards__vertically">
-                    <img src="./img/vert.png" alt="Проект">
+                    <img class="cards__img" src="./img/vert.png" alt="Проект">
+                    <figcaption class="card__decs">
+                        Ресторан, индивидуальный проект, 208 кв.м.
+                    </figcaption>
                 </figure>
+
                 <figure class="cards__long">
-                    <img src="./img/long.jpg" alt="Проект">
+                    <img class="cards__img" src="./img/long.jpg" alt="Проект">
+                    <figcaption class="card__decs">
+                        Культурно-досуговый центр, 6 тыс. кв.м
+                    </figcaption>
                 </figure>
                 <figure class="cards__center">
-                    <img src="./img/prog2.jpg" alt="Проект">
+                    <img class="cards__img" src="./img/prog2.jpg" alt="Проект">
+                    <figcaption class="card__decs">
+                        Коттедж,  305кв.м. Планировка заказчика
+                    </figcaption>
                 </figure>
                 <figure class="cards__vertically-bottom">
-                    <img src="./img/vertic.jpg" alt="Проект">
+                    <img class="cards__img" src="./img/vertic.jpg" alt="Проект">
+                    <figcaption class="card__decs">
+                        Многоэтажное строение
+                    </figcaption>
                 </figure>
+                
                 <figure class="cards__big">
-                    <img src="./img/big.jpg" alt="Проект">
+                    <img class="cards__img" src="./img/big.jpg" alt="Проект">
+                    <figcaption class="card__decs">
+                        Гимназия. Общая площадь 13 476 кв.м. Корпус может вместить 550 учащихся.
+                    </figcaption>
                 </figure>
+                
                 <figure class="cards__bottom-right">
-                    <img src="./img/prog3.jpg" alt="Проект">
+                    <img class="cards__img" src="./img/prog3.jpg" alt="Проект">
+                    <figcaption class="card__decs">
+                        Коттедж,  1305кв.м. Планировка заказчика
+                    </figcaption>
                 </figure>
+               
             </div>
         </div>
     </section>
@@ -202,13 +225,13 @@
                     </div>
                     <div class="contact__element">
                         <a href="#!" class="contact__link">
-                            <img class="contact__img" src="./img/Project Cover 4.png" alt="gallery" >
+                            <img class="contact__img" src="./img/Project Cover 5.jpg" alt="gallery" >
                             <span class="contact__icon icon-vk"></span>
                         </a>
                     </div>
                     <div class="contact__element">
                         <a href="#!" class="contact__link">
-                            <img class="contact__img" src="./img/Project Cover 5.jpg" alt="gallery" >
+                            <img class="contact__img" src="./img/Project Cover 4.png" alt="gallery" >
                             <span class="contact__icon icon-paper-plane"></span>
                         </a>
                     </div>
@@ -219,10 +242,11 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__container">
-                <div class="footer__top">
-                    <ul class="footer__list">
+        <div class="wrapper wrapper__footer">
+            
+                <div class="footer__right">
+                  <ul class="footer__list">
+                        <h2 class="footer__title">Главная</h2>
                         <li class="footer__list-item">
                             <a href="#!" class="footer__link">Мы построили</a>
                         </li>
@@ -232,15 +256,59 @@
                         <li class="footer__list-item">
                             <a href="#!" class="footer__link">Вакансии</a>
                         </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Рекомендации</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">О компании</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="footer__bottom">
+
+                    <ul class="footer__list">
+                        <h2 class="footer__title">Услуги</h2>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Разработка проекта</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Подбор материалов, расчет стоимости</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Реконструкция</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Внутренняя и внешняя отделка</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!" class="footer__link">Подготовка участка</a>
+                        </li>
+                    </ul>
 
                 </div>
-            </div> 
+                <div class="footer__left">
+                    <form method="post" class="form">
+                        <div class="footer__input-container">
+                            <div class="name-input-title">Остались вопросы?<br> Напишите нам и получите ответ в течении 5 минут!</div>
+                            <label class="name-input">Имя
+                                <input class="input-name" type="text" required>
+                            </label>
+                            <label class="name-input">E-mail
+                                <input class="input-email"type="email" required>
+                            </label>
+                            <label class="name-input-text">
+                                <textarea class="textarea" 
+                                name="message" rows="5" placeholder="Message"></textarea>
+                            </label>
+                        </div>
+                        <button class="submit" type="submit">></button> 
+                    </form>
+
+                </div>
+            
         </div>
     </footer>
     
-
+    <script src="./js.js"></script>
 </body>
 </html>
+
+

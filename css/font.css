@@ -62,6 +62,13 @@
 .icon-facebook:before {
   content: "\f09a";
 }
+.icon-circle-right:before {
+  content: "\ea42";
+}
+
+.icon-chevron-circle-right:before {
+  content: "\f138";
+}
 .icon-facebook-f:before {
   content: "\f09a";
 }
